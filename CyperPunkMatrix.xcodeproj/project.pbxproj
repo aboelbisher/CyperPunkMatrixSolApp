@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDD6EA548C2FF93B2C9A5BB0 /* Pods_CyperPunkMatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F779C5E6A74F0A2E1886BE /* Pods_CyperPunkMatrix.framework */; };
+		E301E07B25CEF2A2009D6EFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E301E07A25CEF2A2009D6EFA /* GoogleService-Info.plist */; };
+		E301E09125CEF8DC009D6EFA /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E301E09025CEF8DC009D6EFA /* ImageProcessor.swift */; };
+		E301E09425CEFBEE009D6EFA /* CyperMatrixSol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E301E09325CEFBEE009D6EFA /* CyperMatrixSol.swift */; };
+		E301E09725CEFC67009D6EFA /* TextToMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E301E09625CEFC67009D6EFA /* TextToMatrix.swift */; };
+		E390B51725CEEE5C006EE7A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B51625CEEE5C006EE7A7 /* AppDelegate.swift */; };
+		E390B51925CEEE5C006EE7A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B51825CEEE5C006EE7A7 /* SceneDelegate.swift */; };
+		E390B51B25CEEE5C006EE7A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B51A25CEEE5C006EE7A7 /* ViewController.swift */; };
+		E390B51E25CEEE5C006EE7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E390B51C25CEEE5C006EE7A7 /* Main.storyboard */; };
+		E390B52025CEEE5C006EE7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E390B51F25CEEE5C006EE7A7 /* Assets.xcassets */; };
+		E390B52325CEEE5C006EE7A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E390B52125CEEE5C006EE7A7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08C49501865D581B76DFBBAC /* Pods-CyperPunkMatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyperPunkMatrix.release.xcconfig"; path = "Target Support Files/Pods-CyperPunkMatrix/Pods-CyperPunkMatrix.release.xcconfig"; sourceTree = "<group>"; };
+		69F779C5E6A74F0A2E1886BE /* Pods_CyperPunkMatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyperPunkMatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D9FC40384FD3682A1EE572 /* Pods-CyperPunkMatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyperPunkMatrix.debug.xcconfig"; path = "Target Support Files/Pods-CyperPunkMatrix/Pods-CyperPunkMatrix.debug.xcconfig"; sourceTree = "<group>"; };
+		E301E07A25CEF2A2009D6EFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E301E09025CEF8DC009D6EFA /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		E301E09325CEFBEE009D6EFA /* CyperMatrixSol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyperMatrixSol.swift; sourceTree = "<group>"; };
+		E301E09625CEFC67009D6EFA /* TextToMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToMatrix.swift; sourceTree = "<group>"; };
+		E390B51325CEEE5C006EE7A7 /* CyperPunkMatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyperPunkMatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E390B51625CEEE5C006EE7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E390B51825CEEE5C006EE7A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E390B51A25CEEE5C006EE7A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E390B51D25CEEE5C006EE7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E390B51F25CEEE5C006EE7A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E390B52225CEEE5C006EE7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E390B52425CEEE5C006EE7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E390B51025CEEE5C006EE7A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD6EA548C2FF93B2C9A5BB0 /* Pods_CyperPunkMatrix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03B5AD3CB0A89A122CF376D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69F779C5E6A74F0A2E1886BE /* Pods_CyperPunkMatrix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FC1FFBFAABAA82791B53978 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9FC40384FD3682A1EE572 /* Pods-CyperPunkMatrix.debug.xcconfig */,
+				08C49501865D581B76DFBBAC /* Pods-CyperPunkMatrix.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E390B50A25CEEE5C006EE7A7 = {
+			isa = PBXGroup;
+			children = (
+				E301E07A25CEF2A2009D6EFA /* GoogleService-Info.plist */,
+				E390B51525CEEE5C006EE7A7 /* CyperPunkMatrix */,
+				E390B51425CEEE5C006EE7A7 /* Products */,
+				7FC1FFBFAABAA82791B53978 /* Pods */,
+				03B5AD3CB0A89A122CF376D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E390B51425CEEE5C006EE7A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E390B51325CEEE5C006EE7A7 /* CyperPunkMatrix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E390B51525CEEE5C006EE7A7 /* CyperPunkMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				E390B51625CEEE5C006EE7A7 /* AppDelegate.swift */,
+				E390B51825CEEE5C006EE7A7 /* SceneDelegate.swift */,
+				E390B51A25CEEE5C006EE7A7 /* ViewController.swift */,
+				E301E09025CEF8DC009D6EFA /* ImageProcessor.swift */,
+				E301E09625CEFC67009D6EFA /* TextToMatrix.swift */,
+				E301E09325CEFBEE009D6EFA /* CyperMatrixSol.swift */,
+				E390B51C25CEEE5C006EE7A7 /* Main.storyboard */,
+				E390B51F25CEEE5C006EE7A7 /* Assets.xcassets */,
+				E390B52125CEEE5C006EE7A7 /* LaunchScreen.storyboard */,
+				E390B52425CEEE5C006EE7A7 /* Info.plist */,
+			);
+			path = CyperPunkMatrix;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E390B51225CEEE5C006EE7A7 /* CyperPunkMatrix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E390B52725CEEE5C006EE7A7 /* Build configuration list for PBXNativeTarget "CyperPunkMatrix" */;
+			buildPhases = (
+				5182D3BC7168D01A85272A1B /* [CP] Check Pods Manifest.lock */,
+				E390B50F25CEEE5C006EE7A7 /* Sources */,
+				E390B51025CEEE5C006EE7A7 /* Frameworks */,
+				E390B51125CEEE5C006EE7A7 /* Resources */,
+				60E186DBC50DB143E04AFE01 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CyperPunkMatrix;
+			productName = CyperPunkMatrix;
+			productReference = E390B51325CEEE5C006EE7A7 /* CyperPunkMatrix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E390B50B25CEEE5C006EE7A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Trax;
+				TargetAttributes = {
+					E390B51225CEEE5C006EE7A7 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = E390B50E25CEEE5C006EE7A7 /* Build configuration list for PBXProject "CyperPunkMatrix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E390B50A25CEEE5C006EE7A7;
+			productRefGroup = E390B51425CEEE5C006EE7A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E390B51225CEEE5C006EE7A7 /* CyperPunkMatrix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E390B51125CEEE5C006EE7A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E390B52325CEEE5C006EE7A7 /* LaunchScreen.storyboard in Resources */,
+				E390B52025CEEE5C006EE7A7 /* Assets.xcassets in Resources */,
+				E390B51E25CEEE5C006EE7A7 /* Main.storyboard in Resources */,
+				E301E07B25CEF2A2009D6EFA /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5182D3BC7168D01A85272A1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CyperPunkMatrix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60E186DBC50DB143E04AFE01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CyperPunkMatrix/Pods-CyperPunkMatrix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CyperPunkMatrix/Pods-CyperPunkMatrix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CyperPunkMatrix/Pods-CyperPunkMatrix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E390B50F25CEEE5C006EE7A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E390B51B25CEEE5C006EE7A7 /* ViewController.swift in Sources */,
+				E390B51725CEEE5C006EE7A7 /* AppDelegate.swift in Sources */,
+				E301E09725CEFC67009D6EFA /* TextToMatrix.swift in Sources */,
+				E301E09125CEF8DC009D6EFA /* ImageProcessor.swift in Sources */,
+				E301E09425CEFBEE009D6EFA /* CyperMatrixSol.swift in Sources */,
+				E390B51925CEEE5C006EE7A7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E390B51C25CEEE5C006EE7A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E390B51D25CEEE5C006EE7A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E390B52125CEEE5C006EE7A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E390B52225CEEE5C006EE7A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E390B52525CEEE5C006EE7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E390B52625CEEE5C006EE7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E390B52825CEEE5C006EE7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D9FC40384FD3682A1EE572 /* Pods-CyperPunkMatrix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVM469UDAJ;
+				INFOPLIST_FILE = CyperPunkMatrix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammad.CyperPunkMatrix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E390B52925CEEE5C006EE7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C49501865D581B76DFBBAC /* Pods-CyperPunkMatrix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVM469UDAJ;
+				INFOPLIST_FILE = CyperPunkMatrix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammad.CyperPunkMatrix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E390B50E25CEEE5C006EE7A7 /* Build configuration list for PBXProject "CyperPunkMatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E390B52525CEEE5C006EE7A7 /* Debug */,
+				E390B52625CEEE5C006EE7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E390B52725CEEE5C006EE7A7 /* Build configuration list for PBXNativeTarget "CyperPunkMatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E390B52825CEEE5C006EE7A7 /* Debug */,
+				E390B52925CEEE5C006EE7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E390B50B25CEEE5C006EE7A7 /* Project object */;
+}
