@@ -32,6 +32,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
   @IBOutlet weak var takeImgBtn: UIButton!
   @IBOutlet weak var widthTxtField: UITextField!
 
+  private var activityIndicator = UIActivityIndicatorView(style: .large)
+
   private var mode : Mode = .initial {
       didSet {
           switch self.mode {
@@ -119,10 +121,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
           let ok = UIAlertAction(title: "Confirm", style: .default) { (action) in
               alert.dismiss(animated: true, completion: nil)
 
-            let activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
-            activityIndicator.startAnimating()
-            activityIndicator.center = self?.view.center ?? CGPoint.zero
-            self?.view.addSubview(activityIndicator)
+            self!.activityIndicator.startAnimating()
+            self!.activityIndicator.center = self?.view.center ?? CGPoint.zero
+            self!.view.addSubview(self!.activityIndicator)
 
             DispatchQueue.global(qos: .userInitiated).async {
               let solve = CyperMatrixSol(matrix: matrix, sequences: sequences, bufferSize: _bufferSize)
@@ -175,6 +176,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
   @objc func finalImgViewTapped(gesture : UITapGestureRecognizer) {
 
     gesture.view?.removeFromSuperview()
+    self.activityIndicator.removeFromSuperview()
   }
 
 
@@ -193,17 +195,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
           if let matrixWidth = Int(self.widthTxtField.text ?? "") {
 
             self.matrix = TextToMatrix.getMatrix(fromArr: res, width: matrixWidth)
-
-//            print(self.matrix![0].map {$0.string})
-//            let newImage = ImageDraw.getDrawedImage(image: _image, sequence: self.matrix![0])
-//            DispatchQueue.main.async {
-//              let imgView = UIImageView(frame: self.view.bounds)
-//              imgView.image = newImage
-//              imgView.contentMode = .scaleAspectFit
-//              self.view.addSubview(imgView)
-//            }
-//
-
 
 
             for row in self.matrix! {
