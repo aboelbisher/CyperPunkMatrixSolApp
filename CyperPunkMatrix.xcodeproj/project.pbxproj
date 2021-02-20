@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DDD6EA548C2FF93B2C9A5BB0 /* Pods_CyperPunkMatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F779C5E6A74F0A2E1886BE /* Pods_CyperPunkMatrix.framework */; };
-		E301E07B25CEF2A2009D6EFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E301E07A25CEF2A2009D6EFA /* GoogleService-Info.plist */; };
 		E301E09125CEF8DC009D6EFA /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E301E09025CEF8DC009D6EFA /* ImageProcessor.swift */; };
 		E301E09425CEFBEE009D6EFA /* CyperMatrixSol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E301E09325CEFBEE009D6EFA /* CyperMatrixSol.swift */; };
 		E301E09725CEFC67009D6EFA /* TextToMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E301E09625CEFC67009D6EFA /* TextToMatrix.swift */; };
+		E372EEFE25E168CB00941CD0 /* CyperMatrixNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372EEFD25E168CB00941CD0 /* CyperMatrixNode.swift */; };
+		E372EF0125E1731D00941CD0 /* ImageDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372EF0025E1731D00941CD0 /* ImageDraw.swift */; };
 		E390B51725CEEE5C006EE7A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B51625CEEE5C006EE7A7 /* AppDelegate.swift */; };
 		E390B51925CEEE5C006EE7A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B51825CEEE5C006EE7A7 /* SceneDelegate.swift */; };
 		E390B51B25CEEE5C006EE7A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E390B51A25CEEE5C006EE7A7 /* ViewController.swift */; };
@@ -24,10 +25,11 @@
 		08C49501865D581B76DFBBAC /* Pods-CyperPunkMatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyperPunkMatrix.release.xcconfig"; path = "Target Support Files/Pods-CyperPunkMatrix/Pods-CyperPunkMatrix.release.xcconfig"; sourceTree = "<group>"; };
 		69F779C5E6A74F0A2E1886BE /* Pods_CyperPunkMatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyperPunkMatrix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D9FC40384FD3682A1EE572 /* Pods-CyperPunkMatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyperPunkMatrix.debug.xcconfig"; path = "Target Support Files/Pods-CyperPunkMatrix/Pods-CyperPunkMatrix.debug.xcconfig"; sourceTree = "<group>"; };
-		E301E07A25CEF2A2009D6EFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E301E09025CEF8DC009D6EFA /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		E301E09325CEFBEE009D6EFA /* CyperMatrixSol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyperMatrixSol.swift; sourceTree = "<group>"; };
 		E301E09625CEFC67009D6EFA /* TextToMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToMatrix.swift; sourceTree = "<group>"; };
+		E372EEFD25E168CB00941CD0 /* CyperMatrixNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyperMatrixNode.swift; sourceTree = "<group>"; };
+		E372EF0025E1731D00941CD0 /* ImageDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDraw.swift; sourceTree = "<group>"; };
 		E390B51325CEEE5C006EE7A7 /* CyperPunkMatrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyperPunkMatrix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E390B51625CEEE5C006EE7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E390B51825CEEE5C006EE7A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +72,6 @@
 		E390B50A25CEEE5C006EE7A7 = {
 			isa = PBXGroup;
 			children = (
-				E301E07A25CEF2A2009D6EFA /* GoogleService-Info.plist */,
 				E390B51525CEEE5C006EE7A7 /* CyperPunkMatrix */,
 				E390B51425CEEE5C006EE7A7 /* Products */,
 				7FC1FFBFAABAA82791B53978 /* Pods */,
@@ -93,6 +94,8 @@
 				E390B51825CEEE5C006EE7A7 /* SceneDelegate.swift */,
 				E390B51A25CEEE5C006EE7A7 /* ViewController.swift */,
 				E301E09025CEF8DC009D6EFA /* ImageProcessor.swift */,
+				E372EF0025E1731D00941CD0 /* ImageDraw.swift */,
+				E372EEFD25E168CB00941CD0 /* CyperMatrixNode.swift */,
 				E301E09625CEFC67009D6EFA /* TextToMatrix.swift */,
 				E301E09325CEFBEE009D6EFA /* CyperMatrixSol.swift */,
 				E390B51C25CEEE5C006EE7A7 /* Main.storyboard */,
@@ -166,7 +169,6 @@
 				E390B52325CEEE5C006EE7A7 /* LaunchScreen.storyboard in Resources */,
 				E390B52025CEEE5C006EE7A7 /* Assets.xcassets in Resources */,
 				E390B51E25CEEE5C006EE7A7 /* Main.storyboard in Resources */,
-				E301E07B25CEF2A2009D6EFA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +224,8 @@
 				E390B51B25CEEE5C006EE7A7 /* ViewController.swift in Sources */,
 				E390B51725CEEE5C006EE7A7 /* AppDelegate.swift in Sources */,
 				E301E09725CEFC67009D6EFA /* TextToMatrix.swift in Sources */,
+				E372EF0125E1731D00941CD0 /* ImageDraw.swift in Sources */,
+				E372EEFE25E168CB00941CD0 /* CyperMatrixNode.swift in Sources */,
 				E301E09125CEF8DC009D6EFA /* ImageProcessor.swift in Sources */,
 				E301E09425CEFBEE009D6EFA /* CyperMatrixSol.swift in Sources */,
 				E390B51925CEEE5C006EE7A7 /* SceneDelegate.swift in Sources */,

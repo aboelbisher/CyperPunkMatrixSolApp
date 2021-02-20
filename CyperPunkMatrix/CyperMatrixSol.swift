@@ -11,24 +11,30 @@ import Foundation
 
 class CyperMatrixSol {
 
-  private let matrix : [[String]]
+  private let matrix : [[CyperMatrixNode]]
   private let goalSequences : [[String]]
   private let bufferSize : Int
+  private var maxSequenceValuePossible : Int = 0
 
   private let VISITED = "-1"
 
   private var maxSequenceIndexes : [Int] = []
-  private var maxSequence : [String] = []
+  private var maxSequence : [CyperMatrixNode] = []
   private var maxSequenceWeight = -1
 
-  init (matrix : [[String]], sequences : [[String]], bufferSize : Int) {
+  init (matrix : [[CyperMatrixNode]], sequences : [[String]], bufferSize : Int) {
 
       self.matrix = matrix
       self.goalSequences = sequences
       self.bufferSize = bufferSize
+
+
+    for i in 0 ..< sequences.count {
+      maxSequenceValuePossible += (i + 1)
+    }
   }
 
-  func solve() -> ([String], [Int]) {
+  func solve() -> ([CyperMatrixNode], [Int]) {
 
     checkAllPossible(matrix: matrix,
                      isRow: true, index: 0, iteration: 0, maxIterations: bufferSize, sequenceIndexes: [], sequence: [])
@@ -76,9 +82,10 @@ class CyperMatrixSol {
   }
 
 
-  func checkAllPossible(matrix : [[String]], isRow : Bool, index : Int, iteration : Int, maxIterations : Int, sequenceIndexes : [Int], sequence : [String]) {
+  func checkAllPossible(matrix : [[CyperMatrixNode]], isRow : Bool, index : Int, iteration : Int, maxIterations : Int, sequenceIndexes : [Int], sequence : [CyperMatrixNode]) {
+    if (maxSequenceWeight >= self.maxSequenceValuePossible) {return}
     if (iteration == maxIterations) {
-      let seqWeight = evaluateSequence(sequence: sequence)
+      let seqWeight = evaluateSequence(sequence: sequence.map {$0.string})
       if (seqWeight > maxSequenceWeight) {
         maxSequenceWeight = seqWeight
         maxSequence = sequence
@@ -92,16 +99,16 @@ class CyperMatrixSol {
 
     for i in 0 ..< (isRow ? width : height) {
 
-      var value = ""
+      var value : CyperMatrixNode!
       var newMatrix = matrix
       if (isRow) {
         value = matrix[index][i]
-        newMatrix[index][i] = VISITED
+        newMatrix[index][i].string = VISITED
       } else {
         value = matrix[i][index]
-        newMatrix[i][index] = VISITED
+        newMatrix[i][index].string = VISITED
       }
-      if (value == VISITED) {continue}
+      if (value.string == VISITED) {continue}
       var newSequence = sequence
       newSequence.append(value)
       var newSequenceIndexes = sequenceIndexes

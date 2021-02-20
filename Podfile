@@ -5,7 +5,7 @@ target 'CyperPunkMatrix' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'Firebase/MLVision', '6.25.0'
+  pod 'TOCropViewController'
 
 
 end
