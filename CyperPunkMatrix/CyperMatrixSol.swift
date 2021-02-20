@@ -14,6 +14,7 @@ class CyperMatrixSol {
   private let matrix : [[String]]
   private let goalSequences : [[String]]
   private let bufferSize : Int
+  private var maxSequenceValuePossible : Int = 0
 
   private let VISITED = "-1"
 
@@ -26,6 +27,11 @@ class CyperMatrixSol {
       self.matrix = matrix
       self.goalSequences = sequences
       self.bufferSize = bufferSize
+
+
+    for i in 0 ..< sequences.count {
+      maxSequenceValuePossible += (i + 1)
+    }
   }
 
   func solve() -> ([String], [Int]) {
@@ -77,6 +83,7 @@ class CyperMatrixSol {
 
 
   func checkAllPossible(matrix : [[String]], isRow : Bool, index : Int, iteration : Int, maxIterations : Int, sequenceIndexes : [Int], sequence : [String]) {
+    if (maxSequenceWeight >= self.maxSequenceValuePossible) {return}
     if (iteration == maxIterations) {
       let seqWeight = evaluateSequence(sequence: sequence)
       if (seqWeight > maxSequenceWeight) {

@@ -47,5 +47,6 @@ class ImageProcessor {
             print("Unable to perform the requests: \(error).")
         }
     }
+  
 
 }
